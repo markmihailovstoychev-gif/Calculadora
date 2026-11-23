@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <form action="/calcular" method="GET">
+
+        <label>Primer número:</label>
+        <input type="number" name="num1" min="-99999" max="99999" step="1" required>
+
+        <br><br>
+
+        <label>Segundo número:</label>
+        <input type="number" name="num2" min="-99999" max="99999" step="1" required>
+
+        <br><br>
+
+        <button type="submit" name="operacion" value="suma">Sumar</button>
+        <button type="submit" name="operacion" value="resta">Restar</button>
+        <button type="submit" name="operacion" value="multiplicacion">Multiplicar</button>
+        <button type="submit" name="operacion" value="potencia">Potencia</button>
+
+    </form>
+
+    <p id="resultado"></p>
+
+</body>
+</html>
